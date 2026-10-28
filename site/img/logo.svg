@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Padaria Santo Antônio">
+  <defs>
+    <path id="arcoTexto" d="M 52 168 A 98 98 0 0 1 248 168"/>
+    <g id="grao">
+      <ellipse cx="0" cy="0" rx="7" ry="13" fill="#c8242b"/>
+      <path d="M0 -10 V8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+    </g>
+  </defs>
+
+  <!-- Moldura -->
+  <circle cx="150" cy="150" r="148" fill="#1d6b2f"/>
+  <circle cx="150" cy="150" r="137" fill="#fff"/>
+
+  <!-- Texto curvo -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="44" fill="#c8242b" letter-spacing="4">
+    <textPath href="#arcoTexto" startOffset="50%" text-anchor="middle">PADARIA</textPath>
+  </text>
+
+  <!-- Arco do forno (tijolos) -->
+  <path d="M107 252 V182 A43 43 0 0 1 193 182 V252" fill="none" stroke="#c8242b" stroke-width="24"/>
+  <path d="M107 252 V182 A43 43 0 0 1 193 182 V252" fill="none" stroke="#fff" stroke-width="25" stroke-dasharray="2.2 13.5" stroke-dashoffset="8"/>
+
+  <!-- Trigo -->
+  <path d="M150 250 V146" stroke="#c8242b" stroke-width="4" stroke-linecap="round"/>
+  <use href="#grao" x="150" y="152"/>
+  <g>
+    <use href="#grao" transform="translate(140 171) rotate(-28)"/>
+    <use href="#grao" transform="translate(160 171) rotate(28)"/>
+    <use href="#grao" transform="translate(139 190) rotate(-28)"/>
+    <use href="#grao" transform="translate(161 190) rotate(28)"/>
+    <use href="#grao" transform="translate(139 209) rotate(-28)"/>
+    <use href="#grao" transform="translate(161 209) rotate(28)"/>
+    <use href="#grao" transform="translate(140 227) rotate(-30)"/>
+    <use href="#grao" transform="translate(160 227) rotate(30)"/>
+  </g>
+
+  <!-- Folhas -->
+  <path d="M150 250 C134 248 120 238 116 224 C132 224 146 234 150 250 Z" fill="#1d6b2f"/>
+  <path d="M150 250 C166 248 180 238 184 224 C168 224 154 234 150 250 Z" fill="#1d6b2f"/>
+</svg>

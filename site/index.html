@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria Santo Antônio | Desde 1920 · Goianá - MG</title>
+  <meta name="description" content="Padaria Santo Antônio — mais de 100 anos de tradição e o maior forno a lenha do Brasil. Produtos caseiros no centro de Goianá, Minas Gerais.">
+  <link rel="icon" href="img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand">
+        <img src="img/logo.svg" alt="Logo Padaria Santo Antônio" class="brand__logo">
+        <span class="brand__name">Santo Antônio</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#historia">Nossa história</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#onde-estamos">Onde estamos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Desde 1920 · Goianá, MG</p>
+          <h1>Mais de 100 anos de tradição, saindo do <em>maior forno a lenha</em> do Brasil.</h1>
+          <p class="hero__lead">Pães, quitandas e produtos caseiros feitos como antigamente — com fogo de lenha, receita de família e o carinho de quem faz isso há gerações.</p>
+          <div class="hero__actions">
+            <a href="#encomendas" class="btn btn--primary">Faça sua encomenda</a>
+            <a href="#onde-estamos" class="btn btn--ghost">Como chegar</a>
+          </div>
+        </div>
+        <div class="hero__badge reveal">
+          <img src="img/logo.svg" alt="Selo da Padaria Santo Antônio">
+          <div class="hero__years">
+            <strong id="anos">100+</strong>
+            <span>anos de história</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="highlights">
+      <div class="container highlights__grid">
+        <div class="highlight reveal">
+          <span class="highlight__icon" aria-hidden="true">🔥</span>
+          <h3>Forno a lenha</h3>
+          <p>O maior forno a lenha do Brasil dá sabor e casca únicos aos nossos pães.</p>
+        </div>
+        <div class="highlight reveal">
+          <span class="highlight__icon" aria-hidden="true">🥖</span>
+          <h3>Desde 1920</h3>
+          <p>Uma receita de tradição passada de geração em geração.</p>
+        </div>
+        <div class="highlight reveal">
+          <span class="highlight__icon" aria-hidden="true">🍪</span>
+          <h3>Produtos caseiros</h3>
+          <p>Feitos todos os dias, com ingredientes simples e jeitinho mineiro.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- História -->
+    <section class="section story" id="historia">
+      <div class="container story__inner">
+        <figure class="story__photo reveal">
+          <img src="img/fotos/fachada.jpg" alt="Letreiro da Padaria Santo Antônio: 100 anos de tradição — o melhor café da manhã está aqui" loading="lazy">
+        </figure>
+        <div class="story__text reveal">
+          <p class="eyebrow">Nossa história</p>
+          <h2>Um século de pão quentinho no coração de Goianá</h2>
+          <p>Desde 1920, a Padaria Santo Antônio acende o forno todos os dias na Praça Aimbiré de Paula Andrade, no centro de Goianá. Foram gerações de famílias que cresceram com o cheiro do nosso pão saindo do forno.</p>
+          <p>Nosso orgulho é o forno a lenha — o maior do Brasil — que mantém viva a forma tradicional de assar: fogo lento, calor uniforme e aquele sabor que não se encontra em qualquer lugar.</p>
+          <a href="https://www.instagram.com/santoantoniopadaria4/" target="_blank" rel="noopener" class="link-arrow">Acompanhe o dia a dia no Instagram →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="section products" id="produtos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nossos produtos</p>
+          <h2>Direto do forno para a sua mesa</h2>
+          <p>Alguns dos favoritos da casa. Consulte a disponibilidade do dia pelo WhatsApp.</p>
+        </div>
+
+        <div class="filters reveal" role="tablist">
+          <button class="filter is-active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="paes">Pães</button>
+          <button class="filter" data-filter="quitandas">Quitandas</button>
+          <button class="filter" data-filter="doces">Doces</button>
+        </div>
+
+        <div class="products__grid" id="productsGrid">
+          <!-- Cards gerados em js/script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Frango assado de domingo -->
+    <section class="section sunday" id="frango-assado">
+      <div class="container sunday__inner">
+        <figure class="sunday__photo reveal">
+          <img src="img/fotos/frango-assado.jpg" alt="Hoje é dia de frango assado na Padaria Santo Antônio" loading="lazy">
+        </figure>
+        <div class="sunday__text reveal">
+          <p class="eyebrow">Especial de domingo</p>
+          <p class="sunday__today" id="sundayToday" hidden>🔥 Hoje é dia!</p>
+          <h2>Todo domingo tem <em>frango assado</em></h2>
+          <p>Douradinho por fora, suculento por dentro e temperado do nosso jeito. O almoço de domingo da família já tem endereço: a Padaria Santo Antônio.</p>
+          <ul class="sunday__list">
+            <li>Disponível todos os domingos</li>
+            <li>Encomende com antecedência e garanta o seu</li>
+            <li>Retire na padaria, no centro de Goianá</li>
+          </ul>
+          <a href="https://wa.me/5532998444007?text=Ol%C3%A1!%20Quero%20encomendar%20um%20frango%20assado%20para%20domingo." target="_blank" rel="noopener" class="btn btn--primary">Encomendar frango assado</a>
+          <p class="sunday__phone">ou chame no WhatsApp: <a href="https://wa.me/5532998444007" target="_blank" rel="noopener">(32) 99844-4007</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Galeria</p>
+          <h2>Um pouco do nosso dia a dia</h2>
+          <p>Direto do nosso Instagram. Clique nas fotos para ampliar.</p>
+        </div>
+
+        <div class="gallery__grid" id="galleryGrid">
+          <button class="gallery__item reveal" data-full="img/fotos/sonho.jpg"><img src="img/fotos/sonho.jpg" alt="Sonhos com açúcar: tudo começa com um sonho" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/pao-frances.jpg"><img src="img/fotos/pao-frances.jpg" alt="Pães franceses fresquinhos o dia todo" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/cookies.jpg"><img src="img/fotos/cookies.jpg" alt="Cookies sendo preparados: paixão e carinho em cada produção" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/casquinha.jpg"><img src="img/fotos/casquinha.jpg" alt="Novidade: casquinha de chocolate, baunilha ou mista por R$ 5,00" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/caramujo.jpg"><img src="img/fotos/caramujo.jpg" alt="Pão caramujo em uma caixinha de anel: aceita comer um caramujo comigo?" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/pao-de-queijo.jpg"><img src="img/fotos/pao-de-queijo.jpg" alt="O melhor pão de queijo, servido em uma cumbuca com café" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/donut.jpg"><img src="img/fotos/donut.jpg" alt="Donut de chocolate com granulado colorido" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/domingo.jpg"><img src="img/fotos/domingo.jpg" alt="Sabores de domingo: bandejas de pães, broas e roscas saindo da produção" loading="lazy"></button>
+          <button class="gallery__item reveal" data-full="img/fotos/nuvens.jpg"><img src="img/fotos/nuvens.jpg" alt="Logo da padaria desenhado com nuvens no céu azul" loading="lazy"></button>
+        </div>
+
+        <div class="gallery__cta reveal">
+          <a href="https://www.instagram.com/santoantoniopadaria4/" target="_blank" rel="noopener" class="btn btn--ghost">Ver mais no Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Foto anterior">‹</button>
+      <img id="lightboxImg" src="" alt="">
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Próxima foto">›</button>
+    </div>
+
+    <!-- Encomendas -->
+    <section class="section order" id="encomendas">
+      <div class="container order__inner reveal">
+        <div>
+          <p class="eyebrow eyebrow--light">Encomendas</p>
+          <h2>Vai ter festa, café da tarde ou reunião?</h2>
+          <p>Faça sua encomenda com antecedência e garanta pães, quitandas e salgados fresquinhos, do jeito que você precisa.</p>
+        </div>
+        <div class="order__actions">
+          <a href="https://bit.ly/3Izad3k" target="_blank" rel="noopener" class="btn btn--light">
+            Encomendar pelo WhatsApp
+          </a>
+          <a href="https://www.instagram.com/santoantoniopadaria4/" target="_blank" rel="noopener" class="btn btn--outline-light">
+            Mensagem no Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Onde estamos -->
+    <section class="section location" id="onde-estamos">
+      <div class="container location__inner">
+        <div class="location__info reveal">
+          <p class="eyebrow">Onde estamos</p>
+          <h2>Venha tomar um café com a gente</h2>
+          <address>
+            Praça Aimbiré de Paula Andrade, 25<br>
+            Centro — Goianá, Minas Gerais<br>
+            CEP 36152-000
+          </address>
+          <p class="contact-phone">WhatsApp: <a href="https://wa.me/5532998444007" target="_blank" rel="noopener">(32) 99844-4007</a></p>
+          <p class="status" id="status"></p>
+          <a href="https://maps.app.goo.gl/rGD3yDvC3QDCjFNu7" target="_blank" rel="noopener" class="btn btn--primary">Abrir no Google Maps</a>
+        </div>
+        <div class="location__map reveal">
+          <iframe
+            title="Mapa da Padaria Santo Antônio"
+            src="https://maps.google.com/maps?q=Pra%C3%A7a%20Aimbir%C3%A9%20de%20Paula%20Andrade%2C%2025%2C%20Goian%C3%A1%20MG&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="img/logo.svg" alt="" class="brand__logo">
+        <div>
+          <strong>Padaria Santo Antônio</strong>
+          <span>Tradição desde 1920</span>
+        </div>
+      </div>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/santoantoniopadaria4/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://bit.ly/3Izad3k" target="_blank" rel="noopener">Encomendas</a>
+        <a href="https://maps.app.goo.gl/rGD3yDvC3QDCjFNu7" target="_blank" rel="noopener">Google Maps</a>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Padaria Santo Antônio · Goianá, MG</p>
+    </div>
+  </footer>
+
+  <a href="https://bit.ly/3Izad3k" target="_blank" rel="noopener" class="whats-float" aria-label="Encomendar pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.7 12.7-12.6C28.8 8.6 23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4C5.4 9.8 10.2 5.1 16 5.1s10.6 4.7 10.6 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
